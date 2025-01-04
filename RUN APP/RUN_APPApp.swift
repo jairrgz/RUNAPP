@@ -11,7 +11,7 @@ import SwiftUI
 struct RUN_APPApp: App {
     var body: some Scene {
         WindowGroup {
-            ActivityView()
+            MainTabView()
         }
     }
 }
