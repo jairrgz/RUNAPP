@@ -30,7 +30,7 @@ struct MainTabView: View {
                 }
                 .tag(TabItem.activity)
             
-            ProgressView()
+            ProgressTabBarView()
                 .tabItem {
                     Label(TabItem.progress.name, systemImage: TabItem.progress.iconName)
                 }

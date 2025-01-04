@@ -16,7 +16,7 @@
 		69F0A0252D29B8B200563A6F /* RUN_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0242D29B8B200563A6F /* RUN_APPUITestsLaunchTests.swift */; };
 		69F0A0322D29BA6E00563A6F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0312D29BA6E00563A6F /* MainTabView.swift */; };
 		69F0A0352D29BBBC00563A6F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0342D29BBBC00563A6F /* ProfileView.swift */; };
-		69F0A0372D29BBE000563A6F /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0362D29BBE000563A6F /* ProgressView.swift */; };
+		69F0A0372D29BBE000563A6F /* ProgressTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0362D29BBE000563A6F /* ProgressTabBarView.swift */; };
 		69F0A03B2D29BC3400563A6F /* ComunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A03A2D29BC3400563A6F /* ComunityView.swift */; };
 		69F0A03E2D29BC9600563A6F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A03D2D29BC9600563A6F /* FeedView.swift */; };
 		69F0A0432D29BE4F00563A6F /* WorkoutStatsSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0422D29BE4F00563A6F /* WorkoutStatsSubView.swift */; };
@@ -59,7 +59,7 @@
 		69F0A0242D29B8B200563A6F /* RUN_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUN_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		69F0A0312D29BA6E00563A6F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		69F0A0342D29BBBC00563A6F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		69F0A0362D29BBE000563A6F /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		69F0A0362D29BBE000563A6F /* ProgressTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTabBarView.swift; sourceTree = "<group>"; };
 		69F0A03A2D29BC3400563A6F /* ComunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunityView.swift; sourceTree = "<group>"; };
 		69F0A03D2D29BC9600563A6F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		69F0A0422D29BE4F00563A6F /* WorkoutStatsSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutStatsSubView.swift; sourceTree = "<group>"; };
@@ -125,7 +125,6 @@
 				69F0A04F2D29C26D00563A6F /* Helper */,
 				69F0A03F2D29BDE400563A6F /* Views */,
 				69F0A00D2D29B8B100563A6F /* Preview Content */,
-				69F0A0312D29BA6E00563A6F /* MainTabView.swift */,
 				69F0A00A2D29B8B100563A6F /* Assets.xcassets */,
 				69F0A00C2D29B8B100563A6F /* RUN_APP.entitlements */,
 			);
@@ -168,7 +167,7 @@
 		69F0A0382D29BC0900563A6F /* Progress */ = {
 			isa = PBXGroup;
 			children = (
-				69F0A0362D29BBE000563A6F /* ProgressView.swift */,
+				69F0A0362D29BBE000563A6F /* ProgressTabBarView.swift */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -192,6 +191,7 @@
 		69F0A03F2D29BDE400563A6F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69F0A0522D29C6D900563A6F /* MainTabView */,
 				69F0A0402D29BE2600563A6F /* Activity */,
 				69F0A0332D29BBAD00563A6F /* Profile */,
 				69F0A0382D29BC0900563A6F /* Progress */,
@@ -229,6 +229,14 @@
 				69F0A0502D29C28300563A6F /* Enums.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		69F0A0522D29C6D900563A6F /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				69F0A0312D29BA6E00563A6F /* MainTabView.swift */,
+			);
+			path = MainTabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +378,7 @@
 				69F0A0352D29BBBC00563A6F /* ProfileView.swift in Sources */,
 				69F0A0432D29BE4F00563A6F /* WorkoutStatsSubView.swift in Sources */,
 				69F0A0092D29B8B000563A6F /* ActivityView.swift in Sources */,
-				69F0A0372D29BBE000563A6F /* ProgressView.swift in Sources */,
+				69F0A0372D29BBE000563A6F /* ProgressTabBarView.swift in Sources */,
 				69F0A04C2D29C10000563A6F /* StatItemSubView.swift in Sources */,
 				69F0A04A2D29C0A900563A6F /* ActivitySelectionSubView.swift in Sources */,
 				69F0A0072D29B8B000563A6F /* RUN_APPApp.swift in Sources */,
