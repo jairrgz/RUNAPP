@@ -41,6 +41,16 @@ struct OnboardingView: View {
                     InitialView()
                 }
             }
+            
+            .gesture(
+                DragGesture()
+                    .onEnded { value in
+                        if value.translation.width < -100 { // Si el arrastre es hacia la izquierda
+                            navigationPath.append("LoginView") // Navegar a la siguiente vista
+                        }
+                    }
+            )
+            
         })
     }
     

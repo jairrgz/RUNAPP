@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  InitialView.swift
 //  RUN APP
 //
 //  Created by Jorge Jair Ramirez Gaston Zuloeta on 13/01/25.
@@ -9,6 +9,8 @@ import SwiftUI
 
 struct InitialView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    @State private var navigationPath = NavigationPath()
     
     var body: some View {
         VStack(spacing: 24) {
@@ -17,16 +19,13 @@ struct InitialView: View {
                 
                 Image(.screenshot20250113At60111PM)
                     .resizable()
-                Text("RUNAPP") // AGREGAR UN LOGO
-                    .font(.title2)
-                    .fontWeight(.bold)
                 
-                Text("Bienvenido a RUNAPP")
+                Text("Bienvenido")
                     .font(.title)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                 
-                Text("Corre con nosotros y descubre lo que eres capaz de hacer.")
+                Text("Establece tu límite, tu camino y tu marca")
                     .font(.body)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
@@ -35,7 +34,6 @@ struct InitialView: View {
             
             // Buttons section
             VStack(spacing: 12) {
-                
                 
                 RunAppGeneralButtonSubView(title: "Iniciar Sesion", isPrimary: true) {
                     
@@ -60,6 +58,14 @@ struct InitialView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
         .foregroundColor(.white)
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.width > 100 { // Deslizamiento hacia la derecha
+                        presentationMode.wrappedValue.dismiss() // Navegar hacia atrás
+                    }
+                }
+        )
     }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		69245A092D35CEA3001584DB /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69245A082D35CEA3001584DB /* InitialView.swift */; };
 		69245A0B2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69245A0A2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift */; };
+		69245A0F2D35F879001584DB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69245A0E2D35F879001584DB /* LoginView.swift */; };
 		69BCF07C2D353CD5002FAF1E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BCF07B2D353CD5002FAF1E /* Launch Screen.storyboard */; };
 		69BCF0802D354203002FAF1E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BCF07F2D354203002FAF1E /* OnboardingView.swift */; };
 		69F0A0072D29B8B000563A6F /* RUN_APPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0062D29B8B000563A6F /* RUN_APPApp.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		69245A082D35CEA3001584DB /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		69245A0A2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunAppGeneralButtonSubView.swift; sourceTree = "<group>"; };
+		69245A0E2D35F879001584DB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		69BCF07A2D353C3F002FAF1E /* RUN-APP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RUN-APP-Info.plist"; sourceTree = SOURCE_ROOT; };
 		69BCF07B2D353CD5002FAF1E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		69BCF07F2D354203002FAF1E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 				69245A0A2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		69245A0D2D35F842001584DB /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				69245A0E2D35F879001584DB /* LoginView.swift */,
+			);
+			path = LoginView;
 			sourceTree = "<group>";
 		};
 		69F09FFA2D29B8B000563A6F = {
@@ -213,6 +223,7 @@
 			children = (
 				69BCF07F2D354203002FAF1E /* OnboardingView.swift */,
 				69245A082D35CEA3001584DB /* InitialView.swift */,
+				69245A0D2D35F842001584DB /* LoginView */,
 				69F0A0522D29C6D900563A6F /* MainTabView */,
 				69F0A0402D29BE2600563A6F /* Activity */,
 				69F0A0332D29BBAD00563A6F /* Profile */,
@@ -404,6 +415,7 @@
 				69F0A0432D29BE4F00563A6F /* WorkoutStatsSubView.swift in Sources */,
 				69F0A0092D29B8B000563A6F /* ActivityView.swift in Sources */,
 				69F0A0372D29BBE000563A6F /* ProgressTabBarView.swift in Sources */,
+				69245A0F2D35F879001584DB /* LoginView.swift in Sources */,
 				69F0A04C2D29C10000563A6F /* StatItemSubView.swift in Sources */,
 				69F0A04A2D29C0A900563A6F /* ActivitySelectionSubView.swift in Sources */,
 				69F0A0072D29B8B000563A6F /* RUN_APPApp.swift in Sources */,
