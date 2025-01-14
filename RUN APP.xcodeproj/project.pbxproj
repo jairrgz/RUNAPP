@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69245A092D35CEA3001584DB /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69245A082D35CEA3001584DB /* InitialView.swift */; };
+		69245A0B2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69245A0A2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift */; };
 		69BCF07C2D353CD5002FAF1E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BCF07B2D353CD5002FAF1E /* Launch Screen.storyboard */; };
 		69BCF0802D354203002FAF1E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BCF07F2D354203002FAF1E /* OnboardingView.swift */; };
 		69F0A0072D29B8B000563A6F /* RUN_APPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0A0062D29B8B000563A6F /* RUN_APPApp.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69245A082D35CEA3001584DB /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		69245A0A2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunAppGeneralButtonSubView.swift; sourceTree = "<group>"; };
 		69BCF07A2D353C3F002FAF1E /* RUN-APP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RUN-APP-Info.plist"; sourceTree = SOURCE_ROOT; };
 		69BCF07B2D353CD5002FAF1E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		69BCF07F2D354203002FAF1E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69245A0C2D35ED70001584DB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				69245A0A2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		69F09FFA2D29B8B000563A6F = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +138,9 @@
 		69F0A0052D29B8B000563A6F /* RUN APP */ = {
 			isa = PBXGroup;
 			children = (
-				69BCF07A2D353C3F002FAF1E /* RUN-APP-Info.plist */,
 				69F0A0062D29B8B000563A6F /* RUN_APPApp.swift */,
+				69BCF07A2D353C3F002FAF1E /* RUN-APP-Info.plist */,
+				69245A0C2D35ED70001584DB /* Components */,
 				69F0A04F2D29C26D00563A6F /* Helper */,
 				69F0A03F2D29BDE400563A6F /* Views */,
 				69F0A00D2D29B8B100563A6F /* Preview Content */,
@@ -199,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				69BCF07F2D354203002FAF1E /* OnboardingView.swift */,
+				69245A082D35CEA3001584DB /* InitialView.swift */,
 				69F0A0522D29C6D900563A6F /* MainTabView */,
 				69F0A0402D29BE2600563A6F /* Activity */,
 				69F0A0332D29BBAD00563A6F /* Profile */,
@@ -383,6 +397,7 @@
 				69F0A03E2D29BC9600563A6F /* FeedView.swift in Sources */,
 				69BCF0802D354203002FAF1E /* OnboardingView.swift in Sources */,
 				69F0A04E2D29C19B00563A6F /* ActivityButtonSubView.swift in Sources */,
+				69245A0B2D35ECFF001584DB /* RunAppGeneralButtonSubView.swift in Sources */,
 				69F0A0512D29C28300563A6F /* Enums.swift in Sources */,
 				69F0A03B2D29BC3400563A6F /* ComunityView.swift in Sources */,
 				69F0A0352D29BBBC00563A6F /* ProfileView.swift in Sources */,
@@ -392,6 +407,7 @@
 				69F0A04C2D29C10000563A6F /* StatItemSubView.swift in Sources */,
 				69F0A04A2D29C0A900563A6F /* ActivitySelectionSubView.swift in Sources */,
 				69F0A0072D29B8B000563A6F /* RUN_APPApp.swift in Sources */,
+				69245A092D35CEA3001584DB /* InitialView.swift in Sources */,
 				69F0A0322D29BA6E00563A6F /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,12 +580,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -606,12 +622,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
